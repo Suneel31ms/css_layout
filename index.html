@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar" id="nlinks">
+        <ul class="nav-container">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li class="item-3"><a href="#" >Our team</a></li>
+            <li class="item-4"><a href="#" >contact</a></li>
+        </ul>
+          
+    </div>
+    <div class="cover"><img src="img/undraw.png"></div>
+    
+    <div class="project-grid">
+         <img src="img/data_storage_2_2.png">
+        <img src="img/desktop_analytics_2.png">
+        <img src="img/files_2.png">
+        <img src="img/monitor_coding_2.png">
+        <img src="img/monitor_settings_2.png">
+        <img src="img/server_2_2.png">
+        <img src="img/server_3.png">
+        <img src="img/server_safe_2.png">
+        
+    </div>
+    <div class="footer">&copy; this website made by Suneel Chauhan...</div>
+
+    <script>
+       
+        window.onscroll=function(){
+            var navbar=document.getElementById("nlinks");
+            if(window.pageYOffset>navbar.offsetTop){
+                navbar.classList.add("sticky");
+            }else{
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>
